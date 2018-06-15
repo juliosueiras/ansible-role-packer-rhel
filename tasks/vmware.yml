@@ -9,8 +9,8 @@
     key: "{{ item }}"
     state: present
   with_items:
-    - "http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-DSA-KEY.pub"
-    - "http://packages.vmware.com/tools/keys/VMWARE-PACKAGING-GPG-RSA-KEY.pub"
+    - "http://packages.vmware.com/tools/legacykeys/VMWARE-PACKAGING-GPG-DSA-KEY.pub"
+    - "http://packages.vmware.com/tools/legacykeys/VMWARE-PACKAGING-GPG-RSA-KEY.pub"
 
 - name: Add vmhgfs module (RHEL 6).
   template:
